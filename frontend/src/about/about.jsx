@@ -13,7 +13,7 @@ export default props => (
         <p>Em breve</p>
         <br/>
         <h2> Programa desenvolvido por: </h2>
-        <h5> Mateus Borges Rodrigues </h5>
+        <h5> Ramon Luiz Souza </h5>
 
     </div>
 )

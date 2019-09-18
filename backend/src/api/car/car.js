@@ -8,7 +8,9 @@ const carSchema = new mongoose.Schema({
     marca: { type: String, required: false },
     modelo: { type: String, required: false },
     ano: { type: Number, required: false },
-    combustivel: {type: String, required: false}
+    combustivel: {type: String, required: false},
+    done: { type: Boolean, required: true, default: false },
+    createdAt: { type: Date, default: Date.now }
   })
   
 //cria um modelo de esquema chamado Car e o exporta para ser utliazado em outro arquivo

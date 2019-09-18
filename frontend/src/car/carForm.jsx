@@ -26,18 +26,30 @@ export default props => (
                 onChange={props.handleChangeAno}
                 value={props.ano} ></input>
 
+<h4>O carro é flex?</h4>
             <input
-                id='combustivel'
-                className='form-control'
-                placeholder='Adicione se o tipo do combustível do carro é flex'
+                type="radio"
+                id="combustivel"
                 onChange={props.handleChangeCombustivel}
-                value={props.combustivel} ></input>
+                value="true"
+                checked={props.combustivel === "true"}
+            /> Sim
+            <br/>
+            <input
+                type="radio"
+                id="combustivel"
+                onChange={props.handleChangeCombustivel}
+                value="false"
+                checked={props.combustivel === "false"}
+            />  Não
         </Grid>
         <Grid cols='12 3 2'>
-            <IconButton style='primary' icon='plus' onClick={props.handleAdd}></IconButton>
-            <br/>
-           
-            
+            <IconButton style='primary' icon='floppy-o fa-2x' onClick={props.handleAdd}></IconButton>
+            <br />
+            <IconButton style='info' icon='search fa-2x'
+                onClick={props.handleSearch}></IconButton>
+
+
         </Grid>
     </div>
 
