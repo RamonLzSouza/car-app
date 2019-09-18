@@ -26,21 +26,21 @@ export default props => (
                 onChange={props.handleChangeAno}
                 value={props.ano} ></input>
 
-<h4>O carro é flex?</h4>
+            <h4>O carro é flex?</h4>
             <input
                 type="radio"
                 id="combustivel"
                 onChange={props.handleChangeCombustivel}
-                value="true"
-                checked={props.combustivel === "true"}
+                value="Flex"
+                checked={props.combustivel === "Flex"}
             /> Sim
-            <br/>
+            <br />
             <input
                 type="radio"
                 id="combustivel"
                 onChange={props.handleChangeCombustivel}
-                value="false"
-                checked={props.combustivel === "false"}
+                value="Gasolina"
+                checked={props.combustivel === "Gasolina"}
             />  Não
         </Grid>
         <Grid cols='12 3 2'>
